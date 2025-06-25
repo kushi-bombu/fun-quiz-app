@@ -1,3 +1,6 @@
+import streamlit as st
+
+# Quiz questions
 questions = [
     {
         "question": "Which country has more sheep than people?",
@@ -74,8 +77,7 @@ questions = [
         "options": ["Tuna", "Shark", "Flounder", "Chameleon Fish"],
         "answer": "Flounder"
     },
-     {
-
+    {
         "question": "Which fruit has its seeds on the outside?",
         "options": ["Apple", "Strawberry", "Kiwi", "Papaya"],
         "answer": "Strawberry"
@@ -102,4 +104,18 @@ questions = [
     }
 ]
 
+st.set_page_config(page_title="Fun Quiz App", layout="centered")
+st.title("🎯 Fun Quiz App")
+st.markdown("Test your brain with fun & surprising questions! 🧠")
 
+score = 0
+
+# Display quiz questions
+for i, q in enumerate(questions):
+    st.subheader(f"Q{i+1}: {q['question']}")
+    user_answer = st.radio("Choose your answer:", q['options'], key=f"q_{i}")
+    if user_answer == q["answer"]:
+        score += 1
+
+st.markdown("---")
+st.success(f"✅ You got {score} out of {len(questions)} questions correct!")

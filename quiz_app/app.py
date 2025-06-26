@@ -109,10 +109,6 @@ questions = [
     }
 ]
 
-st.set_page_config(page_title="Fun Quiz App", layout="centered")
-st.title("🎯 Fun Quiz App")
-st.markdown("Test your brain with fun & surprising questions! 🧠")
-
 score = 0
 
 # Display quiz questions

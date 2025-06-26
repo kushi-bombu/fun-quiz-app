@@ -1,7 +1,8 @@
 import streamlit as st
 st.set_page_config(page_title="Spu's Fun Quiz App 💫", layout="centered")
 st.title("🎯 Spu's Fun Quiz App")
-st.markdown("Created with ❤️ by Spu 🧠")
+st.markdown("Created with ❤️ by Spu")
+st.markdown("🧠 Test your brain with fun & surprising questions!!")
 
 # Quiz questions
 questions = [

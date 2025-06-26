@@ -1,22 +1,30 @@
-# 🎯 Fun Quiz App
+# 🎯 Spu's Fun Quiz App
 
-This is a fun and interactive quiz app built using *Streamlit*.  
-It contains general knowledge questions, fun facts, and simple logic that anyone can enjoy!
+Welcome to a super fun and interactive quiz built using *Streamlit*!  
+It contains general knowledge, fun facts, and brain-tickling questions anyone can enjoy! 🧠✨
+
+👉 [Click here to play the quiz](https://fun-quiz-app-xyzxyz.streamlit.app)  
+(Replace with your actual Streamlit link)
+
+---
 
 ## 🚀 Features
 
-- 15+ Multiple Choice Questions
-- Instant score feedback
-- Clean and colorful interface
+- 20+ Unique Multiple Choice Questions
+- Instant scoring after completion ✅
+- Clean and colorful interface 🎨
+- Built for all age groups!
+
+---
 
 ## 🔧 Built With
 
 - Python 🐍
 - Streamlit 🎈
 
-## 💻 How to Run
+---
 
-To run the app locally:
+## 💻 How to Run Locally
 
 ```bash
 streamlit run app.py

@@ -116,6 +116,18 @@ for i, q in enumerate(questions):
     user_answer = st.radio("Choose your answer:", q['options'], key=f"q_{i}")
     if user_answer == q["answer"]:
         score += 1
-
 st.markdown("---")
 st.success(f"✅ You got {score} out of {len(questions)} questions correct!")
+
+# 🎉 Optional final feedback
+if score == len(questions):
+    st.balloons()
+    st.markdown("🎉 Perfect Score! You’re a genius!")
+elif score >= 15:
+    st.markdown("🔥 Great job! You really know your stuff.")
+elif score >= 10:
+    st.markdown("👏 Nice try! You got more than half right.")
+else:
+    st.markdown("😅 Keep learning — you'll get better!")
+
+
